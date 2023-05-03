@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        h1{
+            front-size: 24px;
+            color: darkred
+        }
+        .resaltado {
+            color: green;
+            front-weight: bold
+        }
+    </style>
+</head>
+<body>
+<h1>Aplicacion empleado</h1>
+<p class="resaltado">Nombre: </p>
+<p th:text="${empleado.getNombre()}"></p>
+<p class="resaltado">Departamento: : </p>
+<p th:text="${empleado.getDepartamento()}"></p>
+<p class="resaltado">Sueldo: </p>
+<p th:text="${empleado.getSueldo()}"></p>
+<p class="resaltado">Fecha de nacimiento: </p>
+<p th:text="${empleado.getFechaNacimiento()}"></p>
+<p class="resaltado">ID: </p>
+<p th:text="${empleado.getId()}"></p>
+</body>
+</html>
